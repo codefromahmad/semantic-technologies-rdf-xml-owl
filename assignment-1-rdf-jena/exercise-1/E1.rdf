@@ -1,0 +1,26 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://example.org/">
+  <rdf:Description rdf:about="http://example.org/AlexanderSchultheis">
+    <j.0:givesSeminar>
+      <rdf:Description rdf:about="http://example.org/ProjectSeminar">
+        <j.0:hasAssignments>3</j.0:hasAssignments>
+      </rdf:Description>
+    </j.0:givesSeminar>
+    <j.0:email>Alexander.Schultheis@uni-trier.de</j.0:email>
+    <j.0:name>Alexander Schultheis</j.0:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-iv/faecher/informatikwissenschaften/professuren/wirtschaftsinformatik-2/professur">
+    <j.0:creator>
+      <rdf:Description rdf:about="http://example.org/RalphBergmann">
+        <j.0:givesLecture>
+          <rdf:Description rdf:about="http://example.org/SemanticTechnologies">
+            <j.0:hasSeminar rdf:resource="http://example.org/ProjectSeminar"/>
+          </rdf:Description>
+        </j.0:givesLecture>
+        <j.0:email>bergmann@uni-trier.de</j.0:email>
+        <j.0:name>Ralph Bergmann</j.0:name>
+      </rdf:Description>
+    </j.0:creator>
+  </rdf:Description>
+</rdf:RDF>

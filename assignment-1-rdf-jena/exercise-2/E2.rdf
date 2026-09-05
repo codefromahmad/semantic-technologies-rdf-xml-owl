@@ -1,0 +1,223 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:air="http://example.org/airline#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <air:Trip rdf:about="http://example.org/airline#Trip2">
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F8">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>4</air:flightOrder>
+        <air:toAirport>
+          <air:Airport rdf:about="http://example.org/airline#JFK">
+            <air:startYear>1999</air:startYear>
+            <air:city>New York</air:city>
+          </air:Airport>
+        </air:toAirport>
+        <air:fromAirport>
+          <air:Airport rdf:about="http://example.org/airline#LHR">
+            <air:startYear>1990</air:startYear>
+            <air:city>London</air:city>
+          </air:Airport>
+        </air:fromAirport>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F7">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>3</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#LHR"/>
+        <air:fromAirport>
+          <air:Airport rdf:about="http://example.org/airline#FCO">
+            <air:startYear>2003</air:startYear>
+            <air:city>Rome</air:city>
+          </air:Airport>
+        </air:fromAirport>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F6">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>2</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#FCO"/>
+        <air:fromAirport>
+          <air:Airport rdf:about="http://example.org/airline#BER">
+            <air:startYear>2005</air:startYear>
+            <air:city>Berlin</air:city>
+          </air:Airport>
+        </air:fromAirport>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F5">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>1</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#BER"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#JFK"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:price>1200</air:price>
+    <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2025-05-01T00:00:00</air:startTime>
+    <air:bookedBy>
+      <air:Customer rdf:about="http://example.org/airline#John"/>
+    </air:bookedBy>
+  </air:Trip>
+  <air:FlightConnection rdf:about="http://example.org/airline#C4">
+    <air:planeModel>
+      <air:Plane rdf:about="http://example.org/airline#Boeing737">
+        <air:maxPassengers>180</air:maxPassengers>
+      </air:Plane>
+    </air:planeModel>
+    <air:durationHours>2</air:durationHours>
+    <air:toAirport rdf:resource="http://example.org/airline#BER"/>
+    <air:fromAirport rdf:resource="http://example.org/airline#LHR"/>
+  </air:FlightConnection>
+  <air:FlightConnection rdf:about="http://example.org/airline#C2">
+    <air:planeModel rdf:resource="http://example.org/airline#Boeing737"/>
+    <air:durationHours>9</air:durationHours>
+    <air:toAirport rdf:resource="http://example.org/airline#FCO"/>
+    <air:fromAirport rdf:resource="http://example.org/airline#JFK"/>
+  </air:FlightConnection>
+  <air:Trip rdf:about="http://example.org/airline#Trip1">
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F4">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>4</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#BER"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#LHR"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F3">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>3</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#LHR"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#FCO"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F2">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>2</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#FCO"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#JFK"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F1">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>1</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#JFK"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#BER"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:price>1200</air:price>
+    <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2025-05-01T00:00:00</air:startTime>
+    <air:bookedBy>
+      <air:Customer rdf:about="http://example.org/airline#Aafaq">
+        <air:passport>P123456</air:passport>
+        <air:name>Aafaq Ahmad</air:name>
+      </air:Customer>
+    </air:bookedBy>
+  </air:Trip>
+  <air:Trip rdf:about="http://example.org/airline#Trip3">
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F12">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>4</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#BER"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#LHR"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F11">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>3</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#LHR"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#JFK"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F10">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>2</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#JFK"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#FCO"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:hasFlight>
+      <air:Flight rdf:about="http://example.org/airline#F9">
+        <air:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T03:00:00</air:endTime>
+        <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+        >2025-05-01T00:00:00</air:startTime>
+        <air:flightOrder>1</air:flightOrder>
+        <air:toAirport rdf:resource="http://example.org/airline#FCO"/>
+        <air:fromAirport rdf:resource="http://example.org/airline#BER"/>
+      </air:Flight>
+    </air:hasFlight>
+    <air:price>1200</air:price>
+    <air:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+    >2025-05-01T00:00:00</air:startTime>
+    <air:bookedBy>
+      <air:Customer rdf:about="http://example.org/airline#Emma"/>
+    </air:bookedBy>
+  </air:Trip>
+  <air:Airline rdf:about="http://example.org/airline#GlobalAirline">
+    <air:hasAirport rdf:resource="http://example.org/airline#LHR"/>
+    <air:hasAirport rdf:resource="http://example.org/airline#FCO"/>
+    <air:hasAirport rdf:resource="http://example.org/airline#JFK"/>
+    <air:hasAirport rdf:resource="http://example.org/airline#BER"/>
+    <air:employees>1500</air:employees>
+    <air:manager>Dr. Smith</air:manager>
+  </air:Airline>
+  <air:FlightConnection rdf:about="http://example.org/airline#C3">
+    <air:planeModel rdf:resource="http://example.org/airline#Boeing737"/>
+    <air:durationHours>3</air:durationHours>
+    <air:toAirport rdf:resource="http://example.org/airline#LHR"/>
+    <air:fromAirport rdf:resource="http://example.org/airline#FCO"/>
+  </air:FlightConnection>
+  <air:FlightConnection rdf:about="http://example.org/airline#C1">
+    <air:planeModel rdf:resource="http://example.org/airline#Boeing737"/>
+    <air:durationHours>8</air:durationHours>
+    <air:toAirport rdf:resource="http://example.org/airline#JFK"/>
+    <air:fromAirport rdf:resource="http://example.org/airline#BER"/>
+  </air:FlightConnection>
+  <rdf:Description rdf:about="http://example.org/airline#Flight">
+    <rdfs:subClassOf rdf:resource="http://example.org/airline#FlightConnection"/>
+  </rdf:Description>
+</rdf:RDF>
