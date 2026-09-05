@@ -140,7 +140,7 @@
     >2025-05-01T00:00:00</air:startTime>
     <air:bookedBy>
       <air:Customer rdf:about="http://example.org/airline#Aafaq">
-        <air:passport>P123456</air:passport>
+        <air:passport>DEMO-001</air:passport>
         <air:name>Aafaq Ahmad</air:name>
       </air:Customer>
     </air:bookedBy>
